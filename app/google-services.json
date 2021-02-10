@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "384906513597",
+    "project_id": "navoiy-7919b",
+    "storage_bucket": "navoiy-7919b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384906513597:android:bbcf153be736fe9873bbd4",
+        "android_client_info": {
+          "package_name": "uz.myapps.alishernavoiy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384906513597-mk8cq7anjqd95r4rodqtne6ka3g5bhen.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uz.myapps.alishernavoiy",
+            "certificate_hash": "7336fac0af61230968c3c8963e7ad4bb003ecc03"
+          }
+        },
+        {
+          "client_id": "384906513597-j6qc2m88j4pv5ucd3dglb7m3u0c01g37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7RL6K58UUa5Mv4JP9J5SbVv70NDf_BCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384906513597-j6qc2m88j4pv5ucd3dglb7m3u0c01g37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Alisher Navoiy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kelmadi">Kecha kelgumdir debon ul sarvi gulru kelmadi, Kozlarimga necha tong otguncha uyqu kelmadi</string>
+    <string name="url_music"><![CDATA[https://firebasestorage.googleapis.com/v0/b/navoiy-7919b.appspot.com/o/Alisher%20Navoiy%20-%20Istaganlar%20bizni%2C%20sahroi%20baloda%20istangiz.mp3?alt=media&token=45fd9e55-288a-4511-9d49-8927b60a571b]]></string>
+    <string name="label_text">label</string>
+    <string name="msg_save_image_to_share">Iltimos avval rasmni yuklab oling</string>
+    <string name="msg_share_image">Share Image</string>>
+</resources>

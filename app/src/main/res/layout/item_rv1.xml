@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pg1"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/ralewaymedium"
+        android:text="Ruboiylar"
+        android:textSize="14sp"
+        android:textColor="#2C2929"/>
+</RelativeLayout>
