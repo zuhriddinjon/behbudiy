@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#7041EE"
     tools:context=".fragments.TextFragment">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
@@ -24,34 +23,35 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/name_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="50dp"
                 android:fontFamily="@font/ralewaymedium"
                 android:letterSpacing="0.1"
                 android:textColor="@color/black"
-                android:textSize="24dp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <ScrollView
+            <androidx.core.widget.NestedScrollView
                 android:id="@+id/scroll"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/name_text"
                 android:layout_margin="20dp">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/text"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:fontFamily="@font/ralewayregular"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ralewaymedium"
+                    android:textColor="@color/black"
                     android:textIsSelectable="true"
-                    android:textSize="16sp" />
+                    android:textSize="18sp" />
 
-            </ScrollView>
+            </androidx.core.widget.NestedScrollView>
 
             <com.github.barteksc.pdfviewer.PDFView
                 android:id="@+id/pdfView"
@@ -60,37 +60,6 @@
                 android:layout_below="@+id/name_text"
                 android:layout_marginTop="20dp" />
 
-            <LinearLayout
-                android:id="@+id/ll"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:gravity="center"
-                android:background="@color/white"
-                android:orientation="horizontal"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="10dp">
-
-                <ImageView
-                    android:id="@+id/btn_play"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_baseline_play_circle_filled_24" />
-
-                <SeekBar
-                    android:id="@+id/bar"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="15dp"
-                    android:scrollbarSize="30dp"
-                    android:scrollbars="horizontal"
-                    app:layout_constraintCircleRadius="40dp"
-                    android:max="100"
-                    android:progress="0"
-                    android:maxWidth="100dp"
-                    />
-            </LinearLayout>
         </RelativeLayout>
 
 

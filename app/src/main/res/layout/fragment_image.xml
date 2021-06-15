@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
     tools:context=".fragments.ImageFragment">
 
-    <LinearLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_weight="1"
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -27,7 +26,7 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/img1" />
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -35,15 +34,15 @@
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
                 android:src="@drawable/img3" />
-        </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <LinearLayout
-            android:layout_weight="1"
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -52,7 +51,7 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/img4" />
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -60,15 +59,15 @@
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
                 android:src="@drawable/img8" />
-        </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <LinearLayout
-            android:layout_weight="1"
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -77,7 +76,7 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/img6" />
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -85,6 +84,6 @@
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
                 android:src="@drawable/img7" />
-        </LinearLayout>
-    </LinearLayout>
-</LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

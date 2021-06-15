@@ -6,20 +6,35 @@
     android:background="@color/white"
     tools:context=".fragments.SplashFragment">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Millat ehtiyojiga baxshida umr"
+        android:lines="2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="85dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:fontFamily="@font/motion"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/img1"
         android:layout_margin="40dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Alisher Navoiy"
+        android:text="Mahmudxo`ja Behbudiy"
+        android:lines="1"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="85dp"
         android:layout_centerHorizontal="true"
-        android:textSize="60sp"
+        android:textAlignment="center"
+        android:textSize="50sp"
         android:fontFamily="@font/southernaire"
         android:textColor="@color/black"/>
 

@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "384906513597",
-    "project_id": "navoiy-7919b",
-    "storage_bucket": "navoiy-7919b.appspot.com"
+    "project_number": "756112146181",
+    "project_id": "mahmudxoja-behbudiy",
+    "storage_bucket": "mahmudxoja-behbudiy.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:384906513597:android:bbcf153be736fe9873bbd4",
+        "mobilesdk_app_id": "1:756112146181:android:746a3652bdd7fac708c16c",
         "android_client_info": {
-          "package_name": "uz.myapps.alishernavoiy"
+          "package_name": "uz.alloma.behbudiy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "384906513597-mk8cq7anjqd95r4rodqtne6ka3g5bhen.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "uz.myapps.alishernavoiy",
-            "certificate_hash": "7336fac0af61230968c3c8963e7ad4bb003ecc03"
-          }
-        },
-        {
-          "client_id": "384906513597-j6qc2m88j4pv5ucd3dglb7m3u0c01g37.apps.googleusercontent.com",
+          "client_id": "756112146181-t7t181gvh5v99phhlfus2kua2blgrf8n.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA7RL6K58UUa5Mv4JP9J5SbVv70NDf_BCs"
+          "current_key": "AIzaSyCi_OeNgkabdq_9skvQ_OP6oPKbopzb9k0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "384906513597-j6qc2m88j4pv5ucd3dglb7m3u0c01g37.apps.googleusercontent.com",
+              "client_id": "756112146181-t7t181gvh5v99phhlfus2kua2blgrf8n.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
