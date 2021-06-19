@@ -66,6 +66,8 @@ dependencies {
 
     implementation platform('com.google.firebase:firebase-bom:26.3.0')
 
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+
     implementation 'ja.burhanrashid52:photoeditor:1.1.0'
 
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'

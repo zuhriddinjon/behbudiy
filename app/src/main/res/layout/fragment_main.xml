@@ -50,6 +50,9 @@
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:dividerPadding="6dp"
+                app:showDividers="middle"
+                app:divider="@color/black"
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -59,7 +62,7 @@
                     android:layout_below="@+id/tv_main"
                     android:layout_margin="16dp"
                     android:background="?attr/selectableItemBackground"
-                    android:drawableStart="@drawable/ic_network"
+                    android:drawableStart="@drawable/ic_site"
                     android:fontFamily="@font/robot_medium"
                     android:gravity="center"
                     android:text="Network Fayllar"
@@ -90,7 +93,7 @@
                     android:layout_below="@+id/tv_books"
                     android:layout_margin="16dp"
                     android:background="?attr/selectableItemBackground"
-                    android:drawableStart="@drawable/ic_video"
+                    android:drawableStart="@drawable/ic_youtube"
                     android:fontFamily="@font/robot_medium"
                     android:gravity="center"
                     android:text="Video Fayllar"
