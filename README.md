@@ -5,4 +5,3 @@
 ![image](https://user-images.githubusercontent.com/62906621/122637530-97b38400-d108-11eb-94b6-da8b32968c98.png)
 ![image](https://user-images.githubusercontent.com/62906621/122637535-a0a45580-d108-11eb-9d4e-aebdfda29039.png)
 ![image](https://user-images.githubusercontent.com/62906621/122637536-a69a3680-d108-11eb-8294-eca78cf50d22.png)
-![Uploading image.png…]()
