@@ -107,7 +107,7 @@ class TextEditorDialogFragment : DialogFragment(R.layout.fragment_edit_text) {
         return fragment
     }
 
-    fun getDefaultColors(context: Context): List<Int>? {
+    private fun getDefaultColors(context: Context): List<Int>? {
         val colorPickerColors = ArrayList<Int>()
         colorPickerColors.add(ContextCompat.getColor(context, R.color.blue_color_picker))
         colorPickerColors.add(ContextCompat.getColor(context, R.color.brown_color_picker))

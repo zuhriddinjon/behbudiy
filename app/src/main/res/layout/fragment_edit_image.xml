@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".fragments.EditImageFragment">
 
-    <ja.burhanrashid52.photoeditor.PhotoEditorView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/photoEditorView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:photo_src="@drawable/img1" />
+        android:src="@drawable/img1" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txtCurrentTool"
@@ -26,12 +26,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:visibility="gone"
         android:layout_toStartOf="@+id/imgShare"
         android:src="@drawable/ic_save" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgShare"
         android:layout_width="wrap_content"
+        android:visibility="gone"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_margin="25dp"

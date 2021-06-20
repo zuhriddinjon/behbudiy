@@ -29,8 +29,6 @@ private const val ARG_PARAM1 = "editImage_fragment_param"
 open class EditImageFragment : Fragment(R.layout.fragment_edit_image) {
     private var param1: Int? = null
     private var mSaveImageUri: Uri? = null
-    private lateinit var mPhotoEditor: PhotoEditor
-    private lateinit var mPhotoEditorView: PhotoEditorView
     private var inputtext: String = ""
     private val READ_WRITE_STORAGE = 52
     private val FILE_PROVIDER_AUTHORITY = "uz.alloma.behbudiy.fileprovider"
@@ -65,66 +63,7 @@ open class EditImageFragment : Fragment(R.layout.fragment_edit_image) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        photoEditorView.source.setImageResource(drawable!!)
-        val mTextRobotoTf = ResourcesCompat.getFont(requireContext(), R.font.ralewaymedium)
-
-        mPhotoEditorView = photoEditorView
-        mPhotoEditor = PhotoEditor.Builder(requireContext(), mPhotoEditorView)
-            .setPinchTextScalable(true)
-            .setDefaultTextTypeface(mTextRobotoTf)
-            .build()
-
-
-        val textEditorDialogFragment: TextEditorDialogFragment = TextEditorDialogFragment().show(
-            requireActivity() as AppCompatActivity
-        )!!
-        textEditorDialogFragment.setOnTextEditorListener(object : TextEditor {
-            override fun onDone(inputText: String?, colorCode: Int) {
-                inputtext = inputText!!
-                val styleBuilder = TextStyleBuilder()
-                styleBuilder.withTextColor(colorCode)
-                mPhotoEditor.addText(inputText, styleBuilder)
-                txtCurrentTool.setText(R.string.label_text)
-            }
-        })
-
-
-
-        mPhotoEditor.setOnPhotoEditorListener(object : OnPhotoEditorListener {
-            override fun onEditTextChangeListener(
-                iew: View,
-                text: String,
-                colorCode: Int
-            ) {
-                val textEditorDialogFragment: TextEditorDialogFragment =
-                    TextEditorDialogFragment().show(AppCompatActivity(), text, colorCode)!!
-                textEditorDialogFragment.setOnTextEditorListener(object :
-                    TextEditor {
-                    override fun onDone(inputText: String?, colorCode: Int) {
-                        val styleBuilder = TextStyleBuilder()
-                        styleBuilder.withTextColor(colorCode)
-                        mPhotoEditor.editText(iew, inputText, styleBuilder)
-                    }
-                })
-            }
-
-            override fun onStartViewChangeListener(viewType: ViewType?) {
-
-            }
-
-            override fun onRemoveViewListener(viewType: ViewType?, numberOfAddedViews: Int) {
-
-            }
-
-            override fun onAddViewListener(viewType: ViewType?, numberOfAddedViews: Int) {
-
-            }
-
-            override fun onStopViewChangeListener(viewType: ViewType?) {
-
-            }
-        })
-
+        photoEditorView.setImageResource(drawable!!)
         val imgSave = imgSave
         imgSave.setOnClickListener {
             saveImage()
@@ -174,22 +113,6 @@ open class EditImageFragment : Fragment(R.layout.fragment_edit_image) {
                     .setClearViewsEnabled(true)
                     .setTransparencyEnabled(true)
                     .build()
-                mPhotoEditor.saveAsFile(
-                    file.absolutePath,
-                    saveSettings,
-                    object : OnSaveListener {
-                        override fun onSuccess(imagePath: String) {
-                            hideLoading()
-                            showSnackbar("Rasm yuklandi")
-                            mSaveImageUri = Uri.fromFile(File(imagePath))
-                            mPhotoEditorView.source.setImageURI(mSaveImageUri)
-                        }
-
-                        override fun onFailure(exception: Exception) {
-                            hideLoading()
-                            showSnackbar("Rasm yuklanmadi!")
-                        }
-                    })
             } catch (e: IOException) {
                 e.printStackTrace()
                 hideLoading()
@@ -247,7 +170,7 @@ open class EditImageFragment : Fragment(R.layout.fragment_edit_image) {
         mProgressDialog.dismiss()
     }
 
-    protected fun showSnackbar(message: String) {
+    private fun showSnackbar(message: String) {
         val view: View = requireActivity().findViewById(android.R.id.content)
         Snackbar.make(view, message, Snackbar.LENGTH_SHORT).show()
     }
