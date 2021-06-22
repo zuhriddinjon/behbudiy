@@ -9,18 +9,13 @@ import android.os.Bundle
 import android.os.Environment
 import android.view.View
 import androidx.annotation.DrawableRes
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
-import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
-import ja.burhanrashid52.photoeditor.*
-import ja.burhanrashid52.photoeditor.PhotoEditor.OnSaveListener
 import kotlinx.android.synthetic.main.fragment_edit_image.*
 import uz.alloma.behbudiy.R
-import uz.alloma.behbudiy.fragments.TextEditorDialogFragment.TextEditor
 import java.io.File
 import java.io.IOException
 
@@ -109,10 +104,6 @@ open class EditImageFragment : Fragment(R.layout.fragment_edit_image) {
             )
             try {
                 file.createNewFile()
-                val saveSettings = SaveSettings.Builder()
-                    .setClearViewsEnabled(true)
-                    .setTransparencyEnabled(true)
-                    .build()
             } catch (e: IOException) {
                 e.printStackTrace()
                 hideLoading()

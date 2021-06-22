@@ -21,7 +21,6 @@ class TextFragment : Fragment(R.layout.fragment_text) {
 
         name_text.text = plan?.name
 
-        pdfView.visibility = View.GONE
         var fullText = ""
         plan?.text?.forEach { i ->
             fullText += i.plus("\n\r\r")
